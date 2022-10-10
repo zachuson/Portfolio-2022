@@ -1,6 +1,6 @@
 # Portfolio-2022
 Zachary Uson's portfolio as of October 2022.
 
-** Techshell Project ** - A recreation of an I/O shell implemented through C.
+Techshell Project - A recreation of an I/O shell implemented through C.
 
-** MLCP_Project ** - A data science project for the Machine Learning 
+MLSP_CourseProject - A data science project for the Machine Learning course at IBM. Analyzed a heart dataset of those at risk of heart disease using Python data science libraries, such as Pandas and Matplotlib. 
