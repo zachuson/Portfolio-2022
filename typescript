@@ -1,118 +1,0 @@
-Script started on 2021-02-26 13:53:41-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="96" LINES="48"]
-zacharyuson@zachary-csc222:~$ exit./techshell
-/home/zacharyuson$ cd Desktop
-/home/zacharyuson/Desktop$ pwd
-/home/zacharyuson/Desktop
-/home/zacharyuson/Desktop$ cd ..
-/home/zacharyuson$ pwd
-/home/zacharyuson
-/home/zacharyuson$ ls -lgh  h tech    one.c
--r-------- 1 zacharyuson zacharyuson 410 Feb 23 14:20 one.c
-/home/zacharyuson$ chmod 644 one.c
-/home/zacharyuson$ ls -lh one.c
--rw-r--r-- 1 zacharyuson zacharyuson 410 Feb 23 14:20 one.c
-/home/zacharyuson$ ls /root
-ls: cannot open directory '/root': Permission denied
-/home/zacharyuson$ horseface
-Error 2 (No such file or directory)
-/home/zacharyuson$ cd /root
-Error 13 (Permission denied)
-/home/zacharyuson$ ps
-    PID TTY          TIME CMD
-  25032 pts/1    00:00:00 bash
-  25035 pts/1    00:00:00 techshell
-  25045 pts/1    00:00:00 ps
-/home/zacharyuson$ where  is ps
-ps: /usr/bin/ps /usr/share/man/man1/ps.1.gz
-/home/zacharyuson$ /bin/os  ps u
-USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-zachary+    1365  0.0  0.1 164020  6656 tty2     Ssl+ 09:02   0:00 /usr/lib/gdm3/gdm-x-session -
-zachary+    1367  0.6  1.5 229888 62480 tty2     Sl+  09:02   2:03 /usr/lib/xorg/Xorg vt2 -displ
-zachary+    1381  0.0  0.3 190996 15684 tty2     Sl+  09:02   0:00 /usr/libexec/gnome-session-bi
-zachary+    1907  0.0  0.0   9844  4032 pts/0    Ss   09:02   0:00 bash
-zachary+   25031  0.0  0.0   8212  2180 pts/0    S+   13:53   0:00 script
-zachary+   25032  0.0  0.0   9844  3740 pts/1    Ss   13:53   0:00 bash -i
-zachary+   25035  0.0  0.0   2496  1544 pts/1    S+   13:53   0:00 ./techshell
-zachary+   25047  0.0  0.0  11500  3376 pts/1    R+   13:55   0:00 /bin/ps u
-/home/zacharyuson$ ls
-a.out		fork1.c		   mywords.txt	  primeNumber.c  q4Midterm.c  test.c~
-caseExample.sh	gradeChecker.sh    needABonus.sh  ps.out	 quiz4.c      two.c
-Desktop		hello2		   one.c	  Public	 README.txt   typescript
-Documents	helloworld.c	   one.sh	  q1		 script2.sh   userInput.sh
-Downloads	if-else.sh	   Pictures	  q1.c		 script.sh    Videos
-execl.c		integerBinary.c    pid.c	  q1Midterm.c	 techshell    whileExample.sh
-execle.c	midtermPractice.c  practice2.c	  q2		 techshell.c
-fileFlag.sh	Music		   practice.c	  q2.c		 Templates
-/home/zacharyuson$ echo hello >hi   hi
-/home/zacharyuson$ cat hi
-hello
-/home/zacharyuson$ echo bro >  > hi
-/home/zacharyuson$ cat hi
-hello
-bro
-/home/zacharyuson$ ls
-a.out		fork1.c		   Music	  practice.c	 q2.c	      Templates
-caseExample.sh	gradeChecker.sh    mywords.txt	  primeNumber.c  q4Midterm.c  test.c~
-Desktop		hello2		   needABonus.sh  ps.out	 quiz4.c      two.c
-Documents	helloworld.c	   one.c	  Public	 README.txt   typescript
-Downloads	hi		   one.sh	  q1		 script2.sh   userInput.sh
-execl.c		if-else.sh	   Pictures	  q1.c		 script.sh    Videos
-execle.c	integerBinary.c    pid.c	  q1Midterm.c	 techshell    whileExample.sh
-fileFlag.sh	midtermPractice.c  practice2.c	  q2		 techshell.c
-/home/zacharyuson$ rm q1 q2 hi hello2
-/home/zacharyuson$ ls
-a.out		fork1.c		   needABonus.sh  ps.out       script2.sh   userInput.sh
-caseExample.sh	gradeChecker.sh    one.c	  Public       script.sh    Videos
-Desktop		helloworld.c	   one.sh	  q1.c	       techshell    whileExample.sh
-Documents	if-else.sh	   Pictures	  q1Midterm.c  techshell.c
-Downloads	integerBinary.c    pid.c	  q2.c	       Templates
-execl.c		midtermPractice.c  practice2.c	  q4Midterm.c  test.c~
-execle.c	Music		   practice.c	  quiz4.c      two.c
-fileFlag.sh	mywords.txt	   primeNumber.c  README.txt   typescript
-/home/zacharyuson$ hi
-Error 2 (No such file or directory)
-/home/zacharyuson$ more < one.c
-more: stat of  failed: No such file or directory
-[7m--More--(Next file: one.c)[27m::::::::::::::[K
-one.c
-::::::::::::::
-#include <stdio.h>
-[7m--More--(4%)[27m#include <stdlib.h>
-[7m--More--(9%)[27m[K
-[7m--More--(9%)[27mint main(int argc, char *argv[]) {
-[7m--More--(18%)[27m[K
-[7m--More--(18%)[27m[K	int total = 1;
-[7m--More--(22%)[27m[K	char *value;
-[7m--More--(25%)[27m[K
-[7m--More--(26%)[27m[K	if(argc == 1) {
-[7m--More--(30%)[27m[K
-[7m--More--(30%)[27m[K		printf("Usage: %s val [val [ ... ] ]\n", argv[0]);
-[7m--More--(43%)[27m[K		printf("e.g., %s 17 49 3 466\n", argv[0]);
-[7m--More--(54%)[27m[K
-[7m--More--(54%)[27m[K	}
-[7m--More--(55%)[27m[K
-[7m--More--(55%)[27m[K	else {
-[7m--More--(57%)[27m[K		
-[7m--More--(58%)[27m[K		printf("The product of ");
-[7m--More--(65%)[27m[K
-[7m--More--(65%)[27m[K		for(int i=1; i<argc; i++) {
-[7m--More--(72%)[27m[K
-[7m--More--(73%)[27m[K			int num = atoi(argv[i]);
-[7m--More--(80%)[27m[K			total *= num;
-[7m--More--(84%)[27m[K			printf("%d ", num);
-[7m--More--(89%)[27m[K
-[7m--More--(90%)[27m[K		}
-[7m--More--(90%)[27m[K
-[7m--More--(91%)[27m[K		printf("is %d\n", total);
-[7m--More--(98%)[27m[K
-[7m--More--(98%)[27m[K	}
-[7m--More--(99%)[27m[K
-[7m--More--(99%)[27m[K
-[7m--More--(99%)[27m}[K
-/home/zacharyuson$ 
-/home/zacharyuson$ 
-/home/zacharyuson$ exit
-zacharyuson@zachary-csc222:~$ exit
-exit
-
-Script done on 2021-02-26 14:00:41-06:00 [COMMAND_EXIT_CODE="0"]
